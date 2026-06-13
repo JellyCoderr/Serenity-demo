@@ -38,8 +38,8 @@ export default function Navbar() {
       ref={navRef}
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-cream/90 shadow-[0_1px_24px_rgba(44,44,44,0.08)] backdrop-blur-md'
-          : 'bg-transparent'
+          ? 'bg-cream shadow-[0_1px_24px_rgba(44,44,44,0.08)]'
+          : 'bg-cream'
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 lg:px-8">
@@ -98,7 +98,7 @@ export default function Navbar() {
 
       {/* Mobile menu panel */}
       <div
-        className={`overflow-hidden bg-cream/95 backdrop-blur-md transition-[max-height] duration-500 ease-in-out md:hidden ${
+        className={`overflow-hidden bg-cream transition-[max-height] duration-500 ease-in-out md:hidden ${
           menuOpen ? 'max-h-96' : 'max-h-0'
         }`}
       >
