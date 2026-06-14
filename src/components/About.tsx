@@ -57,7 +57,7 @@ export default function About() {
           >
             Serenity Care Lagos was founded on a simple conviction: our parents
             and grandparents deserve the same standard of hospitality we expect
-            from the world&rsquo;s finest hotels — paired with clinical care we
+            from the world&rsquo;s finest hotels paired with clinical care we
             can trust without question.
           </p>
           <p
