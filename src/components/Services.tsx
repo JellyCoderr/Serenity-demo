@@ -8,7 +8,7 @@ const SERVICES = [
     alt: 'A nurse attending warmly to an elderly woman',
     title: 'Health & Nursing Care',
     description:
-      'Registered nurses on-site around the clock — medication management, health monitoring, and physician-coordinated care plans tailored to each resident.',
+      'Registered nurses on-site around the clock medication management, health monitoring, and physician-coordinated care plans tailored to each resident.',
   },
   {
     image: '/images/service-wellness.jpg',
@@ -36,7 +36,7 @@ export default function Services() {
         <SectionHeading
           eyebrow="Our Services"
           title="Care designed around the whole person"
-          lead="Every programme at Serenity is built on one belief — that growing older should never mean giving up comfort, purpose, or joy."
+          lead="Every programme at Serenity is built on one belief that growing older should never mean giving up comfort, purpose, or joy."
         />
 
         <div className="mt-16 grid gap-8 md:grid-cols-3">

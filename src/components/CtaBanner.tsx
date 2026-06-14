@@ -1,19 +1,25 @@
-import { useRef } from 'react'
-import { useReveal } from '../hooks/useReveal'
+import { useRef } from "react";
+import { useReveal } from "../hooks/useReveal";
 
 export default function CtaBanner() {
-  const sectionRef = useRef<HTMLElement>(null)
-  useReveal(sectionRef)
+  const sectionRef = useRef<HTMLElement>(null);
+  useReveal(sectionRef);
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden bg-charcoal py-24 sm:py-28">
+    <section
+      ref={sectionRef}
+      className="relative overflow-hidden bg-charcoal py-24 sm:py-28"
+    >
       {/* Soft gold glow keeps the dark section from feeling flat */}
       <div
         aria-hidden
         className="absolute left-1/2 top-0 h-96 w-[40rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold/10 blur-3xl"
       />
       <div className="relative mx-auto max-w-3xl px-6 text-center lg:px-8">
-        <p data-reveal className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold">
+        <p
+          data-reveal
+          className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-gold"
+        >
           Visit Us
         </p>
         <h2
@@ -22,11 +28,17 @@ export default function CtaBanner() {
         >
           Come and feel the Serenity difference for yourself
         </h2>
-        <p data-reveal className="mx-auto mt-6 max-w-xl text-base font-light leading-relaxed text-cream/70">
+        <p
+          data-reveal
+          className="mx-auto mt-6 max-w-xl text-base font-light leading-relaxed text-cream/70"
+        >
           Join us for a private tour, meet our care team, and share a cup of tea
-          with the family. No obligation — only a warm welcome.
+          with the family. No obligation only a warm welcome.
         </p>
-        <div data-reveal className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-8">
+        <div
+          data-reveal
+          className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-8"
+        >
           <a
             href="#contact"
             className="group inline-flex items-center gap-3 bg-gold px-9 py-4 text-sm font-medium uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-cream hover:text-charcoal"
@@ -45,5 +57,5 @@ export default function CtaBanner() {
         </div>
       </div>
     </section>
-  )
+  );
 }
